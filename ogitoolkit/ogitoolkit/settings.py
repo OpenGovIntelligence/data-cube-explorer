@@ -136,3 +136,4 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
+API_URL = "http://vmogi01.deri.ie:4567/cubeQueryingAPI/" 

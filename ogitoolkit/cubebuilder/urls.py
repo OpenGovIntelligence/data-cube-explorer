@@ -7,5 +7,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^api/(?P<api_name>[a-zA-Z0-9-]+)$', views.call_api, name='call_api'),
 ]
 
