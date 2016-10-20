@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block content %}
+
+<div class="content">
+    <table>
+        <tr>
+            <td> Dataset </td>
+            <td> <select id="select-dataset"></select> </td>
+            <td> Maximum number of records </td>
+            <td>
+                <select value="500" id="select-numrecords">
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="10000">10000</option>
+                    <option value="100000">100000</option>
+                </select>
+            </td>
+    </table>
+
+
+    <div id="ds-name"></div>
+    <div id="ds-description"></div>
+    <div id="ds-main">
+        <div id="output" style="min-height: 900px; border-top: 1px dashed; border-bottom: 1px dashed;background-color: rgb(242, 243, 244);height:auto;padding: 10px;"></div>
+    </div>
+    <div>PivotTable view</div>
+</div>
+{% endblock content %}
